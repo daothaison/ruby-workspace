@@ -9,13 +9,4 @@ RUN eslint --version
 RUN apt-get -y update && apt-get -y install ruby-full
 RUN curl -o /usr/bin/framgia-ci https://raw.githubusercontent.com/framgiaci/framgia-ci-cli/master/dist/framgia-ci \
     && chmod +x /usr/bin/framgia-ci
-RUN gem install rspec \
-	scss_lint \
-	brakeman \
-	bundle-audit \
-	reek \
-	rails_best_practices \
-	simplecov \
-	robocop \
-	rake
 WORKDIR /
